@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>David Benjamin Lim</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="Files/stanfordfavicon.ico">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+    line-height:22px;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #4888A1;
+    color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+/* Main column */
+.main {
+    flex: 65%;
+    background-color: white;
+    padding: 30px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    max-width: 100%;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+</style>
+
+<!--This will call MathJax using this CDN stuff-->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script 
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+
+</head>
+<body>
+
+<!-- Note -->
+<!-- Header -->
+<div class="header">
+  <h1>David Benjamin Lim</h1>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Main</a>
+  <a href="research.html">Research</a>
+  <a href="expository-articles.html"> Notes and Expository Articles</a>
+<!--     <a href="misc">Misc</a> -->
+</div>
+
+
+  <div class="main" >
+
+    <div style="margin-left:45px;width:70%">
+
+
+    <br>
+
+    <h2 id="expository-articles">Notes and Expository Articles</h2>
+
+    <h3 id="expository-articles">Algebraic Geometry, Arithmetic Geometry and Number Theory</h3>
+    
+    <p style ="margin-left: 40px"> <b> 
+    The Picard number of a Kummer surface </b>
+    <br>
+    We give a self-contained proof that the Picard number of the Kummer surface
+    $X$ associated to an abelian surface $A$, satisfies $\rho(X)= 16 + \rho(A)$.
+    <br>
+    With Zev Rosengarten.
+    <br>
+    <a href="files/pic_kummer_surface.pdf">PDF</a> 
+    </p>
+
+    <p style ="margin-left: 40px"> <b> 
+    A proper scheme with infinite-dimensional fppf cohomology</b>
+    <br>
+    It is a fundamental fact in étale cohomology that the cohomology of any
+    constructible sheaf on a proper scheme is finite. In this article, I give
+    an example showing this is false in the fppf topology.
+
+    <br>
+
+    <a href="files/cusp_cubic_pic.pdf">PDF</a> &nbsp
+    <a href="https://thuses.com/algebraic-geometry/a-proper-scheme-with-infinite-dimensional-fppf-cohomology/">Blog article on Thuses</a>
+
+    </p>
+
+    <p style ="margin-left: 40px"> <b> 
+        The étale cohomology of curves over a finite field</b>
+        <br>
+        I compute the étale cohomology (with coefficients in $\mathbf{G}_m$) of a curve 
+        over a finite field. The calculation is more subtle than the case over an algebraically 
+        closed field, because theorems such as Artin vanishing and Poincaré duality <em>cannot</em>
+        be applied.
+        <br>
+
+    <a href="https://thuses.com/algebraic-geometry/the-etale-cohomology-of-curves-over-finite-fields/">Blog article on Thuses</a>
+
+    </p>
+
+    <p style ="margin-left: 40px"> <b> Semicontinuity of weights </b>
+    <br>
+    Notes for a lecture I gave during the 2016-2017 edition of Stanford's 
+    Number Theory Learning Seminar. Given a variety over a finite field, I prove that the weight
+    of a lisse sheaf (in the sense of Deligne) is invariant under restriction to a dense open.
+    </br>
+    <a href="files/Etale_Cohomology_Seminar.pdf">PDF</a> &nbsp
+    <a href="http://virtualmath1.stanford.edu/~conrad/Weil2seminar/Notes/L19.pdf">
+    Version on learning seminar website</a> (My notes start from page 9)
+     </p>
+    
+    <h3 id="expository-articles">Representation Theory</h3>
+
+    <p style="margin-left: 40px"> <b> The Peter-Weyl theorem</b>
+    <br> Essay I wrote for a functional analysis class in college. 
+    It proves the "analytic" version of the Peter-Weyl Theorem, namely that 
+    the matrix coefficients of a compact Lie group $G$ are dense in $L^2(G)$.
+    </br>
+    <a href="files/peterweyl.pdf">PDF</a> 
+     </p>
+
+    <!-- <p style="margin-left: 40px"> <b> Schur-Weyl Duality and Irreducible
+        Representations of $\mathfrak{sl}_n$ </b>
+    <a href="files/Algebra_3_Final.pdf">PDF</a></p> -->
+      
+     
+  <br>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
