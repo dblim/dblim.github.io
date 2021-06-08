@@ -6,6 +6,7 @@
 }
 
 /* Style the body */
+/* !important is apparently a hack to make font work in firefox */
 body {
         font-family: 'Source Sans Pro', sans-serif !important;
     margin: 0;
