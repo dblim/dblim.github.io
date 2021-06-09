@@ -8,8 +8,9 @@
 /* Style the body */
 /* !important is apparently a hack to make font work in firefox */
 body {
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: Arial;
     margin: 0;
+    line-height:22px;
 }
 
 /* Header/logo Title */
