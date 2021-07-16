@@ -77,8 +77,8 @@ a:hover {
 .site .top_content {
     display: flex;
     flex-direction:row;
-    height: 350px;
-    padding-bottom:10px;
+    height: 360px;
+    padding-bottom:30px;
     padding-top:30px;
 }
 
