@@ -76,8 +76,7 @@ a:hover {
 
 .site .top_content {
     display: flex;
-    flex-direction:row;
-    height: 360px;
+    flex-direction: row;
     padding-bottom:30px;
     padding-top:30px;
 }
@@ -153,8 +152,37 @@ hr {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
-    .row, .navbar {   
+    .header{
+        display:flex;
         flex-direction: column;
+    }
+
+    .navbar{
+        width:100%;
+        vertical-align: center;
+
+    }
+    .top_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    top_text{
+        float:top
+    }
+
+    top_img{
+        float:bottom;
+    }
+
+
+    .navbar a {
+        height: 100%;
+        display: table;
+        float: left;
+        padding-left: 0px;
+        padding-right: 20px;
+        
     }
 }
 
