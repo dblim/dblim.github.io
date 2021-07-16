@@ -100,7 +100,7 @@
                             <img src="files/penang.gif">
                         </div>
 
-                        <p id="description">The gif above shows the evolution over time of (R_0, daily new cases per 100k) for 
+                        <p id="description">The gif above shows the evolution over time of ($R_0$, daily new cases/100k) for 
                             each of the 5 districts in Penang, i.e. Timur Laut, Barat Daya, Seberang Perai Utara,
                             Seberang Perai Tengah and Seberang Perai Selatan. These have been abbreviated respectively 
                             as TL, BD, SPU, SPT, SPS. 
@@ -112,14 +112,15 @@
                             function of the state of the healthcare system, e.g. ICU occupancy and vaccination rates.
                             However, since I do not have access to the data of ICU occupancy rates in Penang,
                             I shaded in thresholds determined empirically from past data: Go back in time and record the date that is two weeks or so  <em>prior</em> to
-                            the healthcare system being overwhelmed. Record what the daily new cases/R_0 were around then, and set
+                            the healthcare system being overwhelmed. Record ($R_0$,daily new cases/100k) around then, and set
                             that to be your threshold.
                         </p>
 
                         <p>
-                            The code to calculate R_0 for each district of (of any state!) in Malaysia
+                            The code to calculate $R_0$ for each district of (of any state!) in Malaysia
                             is available on my GitHub <a href="https://github.com/dblim/penang-covid19-r0">here</a>.
-
+                            The basic reproduction number was calculated using the method of ordinary least squares
+                            applied to daily new case numbers over a short time frame.
                         </p>
 
 
@@ -233,12 +234,16 @@
         </div>
 
     <div class="work">
- 
         <h1>Education</h1>
-            <p><b>Ph.D. in Mathematics</b>, Stanford University, 2015-2020</p>
+            <p><b>Ph.D. in Mathematics</b>, Stanford University, 2015-2020.</p>
 
-            <p><b>Ph.B. in Mathematics</b>, Australian National University, 2011-2014 </p>
+            <p><b>Ph.B. in Mathematics</b>, Australian National University, 2011-2014. </p>
 
+    </div>
+
+    <div class="work">
+        <h1>Honors</h1>
+            <p>University Medal, Australian National University, 2014.</p>
     </div>
 
     <br>
