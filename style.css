@@ -155,24 +155,28 @@ hr {
     .header{
         display:flex;
         flex-direction: column;
+        height:100%
+    }
+
+    .name_container {
+        height: 50px;
     }
 
     .navbar{
         width:100%;
         vertical-align: center;
-
+        height:50px;
     }
-    .top_content {
+
+    .site .top_content {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
-    top_text{
-        float:top
-    }
-
-    top_img{
-        float:bottom;
+    .top_img{
+        display:flex;
+        justify-content: center;
+        padding-bottom: 30px;
     }
 
 
