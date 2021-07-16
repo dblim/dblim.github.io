@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" text='text/css' href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <script href="https://kit.fontawesome.com/c127d3d6f6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" text='text/css' href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -65,7 +65,7 @@
 
             <div class="top_img">
                 <figure>
-                <img src="benlim.jpeg">
+                <img src="files/benlim.jpeg">
                 </figure>
             </div>
         </div>
@@ -88,6 +88,36 @@
             <h1>Current Projects</h1>
 
             <div class="tab_block">
+                <p>
+                    <h2>COVID-19 in Penang</h2>
+                        <p id="description">
+                            A reopening criterion for Penang (as well as other states in Malaysia)
+                            based on the basic reproduction number and daily new cases per 100,000 
+                            population. 
+                        </p>
+
+                        <div class="penang-gif">
+                            <img src="files/penang.gif">
+                        </div>
+
+                        <p>The gif above shows the evolution over time of (R_0, daily new cases per 100k) for 
+                            each of the 5 districts in Penang, i.e. Timur Laut, Barat Daya, Seberang Perai Utara,
+                            Seberang Perai Tengah and Seberang Perai Selatan. These have been abbreviated respectively 
+                            as TL, BD, SPU, SPT, SPS. 
+                        </p>
+
+                        <p>
+                            The criterion for reopening that we suggest depends on determining thresholds
+                            shaded green, yellow and red in the figure above. In theory, these thresholds are a 
+                            function of the state of the healthcare system, e.g. ICU occupancy and vaccination rates.
+                            However, as a rough first-order approximation to the problem, these thresholds can be determined
+                            empirically from past data: Go back in time and record the date that is two weeks or prior to
+                            the healthcare system being overwhelmed. Record what the daily new cases/R_0 is around then, and set
+                            that to be your threshold.
+                        </p>
+                </p>
+                
+
                 <p>
                     <h2>2021 Bayan Baru Donation Drive </h2> 
                         <p id="description">
