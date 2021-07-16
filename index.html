@@ -92,7 +92,7 @@
                     <h2>COVID-19 in Penang</h2>
                         <p id="description">
                             A reopening criterion for Penang (as well as other states in Malaysia)
-                            based on the basic reproduction number and daily new cases per 100,000 
+                            at the <em>district level</em>, based on the basic reproduction number and daily new cases per 100,000 
                             population. 
                         </p>
 
@@ -107,15 +107,22 @@
                         </p>
                         <br>
 
-                        <p id="description">
                             The criterion for reopening that we suggest depends on determining thresholds
                             shaded green, yellow and red in the figure above. In theory, these thresholds are a 
                             function of the state of the healthcare system, e.g. ICU occupancy and vaccination rates.
-                            However, as a rough first-order approximation to the problem, these thresholds can be determined
-                            empirically from past data: Go back in time and record the date that is two weeks or prior to
-                            the healthcare system being overwhelmed. Record what the daily new cases/R_0 is around then, and set
+                            However, since I do not have access to the data of ICU occupancy rates in Penang,
+                            I shaded in thresholds determined empirically from past data: Go back in time and record the date that is two weeks or so  <em>prior</em> to
+                            the healthcare system being overwhelmed. Record what the daily new cases/R_0 were around then, and set
                             that to be your threshold.
                         </p>
+
+                        <p>
+                            The code to calculate R_0 for each district of (of any state!) in Malaysia
+                            is available on my GitHub <a href="https://github.com/dblim/penang-covid19-r0">here</a>.
+
+                        </p>
+
+
                 </p>
                 
 
