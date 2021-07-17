@@ -8,11 +8,11 @@
 /* Declare global font sizes here */
 :root {
     --name-size: 25px;
-    --nav-size: 16px;
-    --top-size: 16px;
-    --work-h1-size: 25px;
-    --work-h2-size: 16px;
-    --work-p-size: 16px;
+    --nav-size: 13px;
+    --top-size: 15px;
+    --work-h1-size: 20px;
+    --work-h2-size: 15px;
+    --work-p-size: 15px;
 }
 
 * {
@@ -22,7 +22,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
     line-height: 25px; 
-    font-size:16px;
+    font-size:15px;
 }
 
 a {
@@ -77,7 +77,7 @@ a:hover {
 .site .top_content {
     display: flex;
     flex-direction: row;
-    padding-bottom:30px;
+    padding-bottom:0px;
     padding-top:30px;
 }
 
@@ -105,10 +105,14 @@ a:hover {
     padding-bottom:1rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 .work {
     height:100%;
-    padding-top:2rem;
+    padding-top:1em;
 }
 
 .work h1 {
@@ -144,13 +148,30 @@ hr {
     background: #DCDCDC;
 }
 
+/* FOOTER */
+
 .footer{
-    height: 40px;
+    height: 200px;
     position: relative;
     padding-top:20px;
 }
 
+.footer .footer-content {
+    height:100px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding-bottom:10px;
+}
+
+.footer h1 {
+    padding-bottom:10px;
+}
+
 .footer .footer-bottom{
+    height:50px;
     width: 100%;
     text-align: center;
     position: absolute;
