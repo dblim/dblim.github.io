@@ -15,12 +15,16 @@
     --work-p-size: 15px;
 }
 
+@font-face {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif; 
+    font-family: 'Nunito Sans', sans-serif !important!; 
     line-height: 25px; 
     font-size:15px;
 }
