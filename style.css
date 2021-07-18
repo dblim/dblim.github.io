@@ -9,10 +9,10 @@
 :root {
     --name-size: 25px;
     --nav-size: 13px;
-    --top-size: 15px;
+    --top-size: 17px;
     --work-h1-size: 20px;
-    --work-h2-size: 15px;
-    --work-p-size: 15px;
+    --work-h2-size: 17px;
+    --work-p-size: 17px;
 }
 
 * {
@@ -22,7 +22,7 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif; 
     line-height: 25px; 
-    font-size:15px;
+    font-size:17px;
 }
 
 a {
@@ -187,6 +187,11 @@ hr {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
+    * {
+        font-size:17px;
+    }
+
+
     .header{
         display:flex;
         flex-direction: column;
