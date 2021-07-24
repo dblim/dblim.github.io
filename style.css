@@ -6,7 +6,7 @@
     --name-size: 25px;
     --nav-size: 13px;
     --top-size: 17px;
-    --work-h1-size: 20px;
+    --work-h1-size: 22px;
     --work-h2-size: 17px;
     --work-p-size: 17px;
 }
@@ -16,7 +16,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif; 
-    line-height: 25px; 
+    line-height: 23px; 
     font-size:17px;
 }
 
@@ -187,11 +187,19 @@ html {
     font-size: var(--work-p-size);
 }
 
-.tab_block{
+.tab_block {
     margin-left:40px;
     padding-bottom:5px;
     font-size: var(--work-p-size);
 }
+
+.tab_block_pre {
+    margin-left:20px;
+    padding-bottom:5px;
+    font-size: var(--work-p-size);
+}
+
+
 
 .work p {
     padding-bottom:10px;
