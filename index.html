@@ -26,41 +26,38 @@
 <body>
 
     <div class="site">
-        
-        <nav class="navbar">
-            <div class="name-container">
-                <h1>David Benjamin Lim</h1>
-            </div>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="index.html">Home</a> </li>
-                    <li><a href="#projects">Projects</a> </li>
-                    <li><a href="#papers">Papers</a> </li>
-                    <li><a href="#notes">Expository Articles</a> </li>
-                </ul>
-            </div>
-        </nav>
-
+    <nav class="navbar">
+        <div class="name-container">
+            <h1>David Benjamin Lim</h1>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#papers">Papers</a> </li>
+                <li><a href="#notes">Expository Articles</a> </li>
+            </ul>
+        </div>
+    </nav>
     </div>
 
     <hr>
     
     <div class="site">
-
         <div class="top_content">
             <div class="top_text">   
-                <p> I am a mathematician working in quantitative finance. I received my Ph.D. in math    
+                <p> I received my Ph.D. in math    
                     from <a href="https://mathematics.stanford.edu/">Stanford</a> in August 2020, advised by 
                 <a href="http://math.stanford.edu/~vakil/"> Ravi Vakil</a> and 
                 <a href="https://sites.math.washington.edu/~jarod/"> Jarod Alper</a>. </p>
                 <br>
 
-                <p>My research interests are largely in algebraic geometry, with a focus on moduli theory
+                <p>My academic research interests are largely in algebraic geometry, with a focus on moduli theory
                     and the formal geometry of algebraic stacks. See my <a href="#papers">papers</a>
                     below. 
                 </p>
@@ -87,13 +84,30 @@
         </div>
 
         <div class="work" id="projects">
- 
             <h1>Projects</h1>
 
+            <div class="tab_block_pre">
+                <h2>COVID-19</h2>
+                <p> 
+                Since the start of the <a href="https://en.wikipedia.org/wiki/Malaysian_movement_control_order#Total_lockdown">total lockdown</a> 
+                in Malaysia on 1/6/2021, I have become increasingly interested in trying to understand the spread of COVID-19 in Malaysia.
+                Based on limited data available at the time, I suggested a <a href="#description-penang">criteria</a> that the state of government of Penang could use for reopening. 
+                Ever since the release of more data on the Malaysian Ministry of Health's <a href="https://github.com/MoH-Malaysia/covid19-public/">GitHub</a>, this model is now 
+                obsolete, and I have now turned my attention to addressing more "foundational" questions. See <a href="#covid-suggestions">here</a> for more details.
+                </p>
             <div class="tab_block">
-                <p>
-                    <h2>COVID-19 in Penang</h2>
-                        <p id="description">
+
+                    <h2 id="covid-suggestions">A proposal for COVID-19 modelling in Malaysia</h2>
+                    <p>
+                        I suggest three things to be investigated about COVID-19 in Malaysia. The first two are empirical in nature while the third is more theoretical
+                        (in line with my natural instinct as a mathematician). I have brought forward my proposal to the CEO of <a href="https://www.google.com/search?client=firefox-b-d&q=ideas+malaysia">IDEAS</a>, 
+                        <a href="https://www.triciayeoh.com/">Tricia Yeoh</a>. In addition, I have also discussed my proposal with National Recovery Council member
+                        <a href="https://my.asiatatler.com/people/hartini-zainuddin">Tini Zainuddin</a>.  The proposal is 
+                        <a href="files/modeling_covid19_malaysia.pdf">here</a>.
+                    </p>
+
+                    <h2 id="description-penang">A reopening criterion for Penang  </h2>
+                        <p>
                             A reopening criterion for Penang (as well as other states in Malaysia)
                             at the <em>district level</em>, based on the basic reproduction number and daily new cases per 100,000 
                             population. 
@@ -125,9 +139,9 @@
                             The basic reproduction number was calculated using the method of ordinary least squares
                             applied to daily new case numbers over a short time frame.
                         </p>
-                </p>
+
                 
-                <p>
+
                     <h2>2021 Bayan Baru Donation Drive </h2> 
                         <p id="description">
                             The goal is to raise       
@@ -136,8 +150,9 @@
                             page to donate is  <a href="https://give.asia/campaign/2021-bayan-baru-food-drive#/">here</a>. This project is joint with the member of parliament
                             for Bayan Baru, <a href="https://www.facebook.com/SimTzeTzin.MP/">YB Sim Tze Tzin</a>. 
                         </p>
-                </p>
+
             </div> 
+        </div>
         </div>
 
         <div class="work" id="papers">
@@ -145,24 +160,6 @@
             <div class="tab_block_pre">
                 <h2>Formal Geometry of Algebraic Stacks</h2>
                 <div class="tab_block">
-                    <p>
-                        <h2>Algebraization theorems for coherent sheaves on stacks</h2>
-                            <p id="description">
-                                My Ph.D. thesis. It is essentially an integrated version of the two papers below.
-                            </p>
-                        <a href="https://stacks.stanford.edu/file/druid:gj525by2383/main_dblim-augmented.pdf">PDF </a> 
-                    </p>
-                    
-                    <p>
-                        <h2>Grothendieck's existence theorem for relatively perfect complexes on
-                        algebraic stacks </h2>
-                            <p id="description">
-                                I extend Lieblich's algebraization result for complexes on algebraic spaces
-                                to the setting of algebraic stacks.  
-                            </p>
-                        <a href="https://arxiv.org/abs/1907.05025">arXiv</a>    
-                    </p>
-    
                     <p>
                         <h2> Coherently complete algebraic stacks in positive characteristic</h2>
     
@@ -178,8 +175,24 @@
                         <em>In preparation.</em> &nbsp; <a href="https://www.youtube.com/watch?v=_gUvhdEaZN0">
                                 Jarod's talk on our result (video)</a>
                         </p>
-                        
-                        
+                    </p>
+
+                    <p>
+                        <h2>Grothendieck's existence theorem for relatively perfect complexes on
+                        algebraic stacks </h2>
+                            <p id="description">
+                                I extend Lieblich's algebraization result for complexes on algebraic spaces
+                                to the setting of algebraic stacks.  
+                            </p>
+                        <a href="https://arxiv.org/abs/1907.05025">arXiv</a>    
+                    </p>
+
+                    <p>
+                        <h2>Algebraization theorems for coherent sheaves on stacks</h2>
+                            <p id="description">
+                                My Ph.D. thesis. It is essentially an integrated version of the two papers above.
+                            </p>
+                        <a href="https://stacks.stanford.edu/file/druid:gj525by2383/main_dblim-augmented.pdf">PDF </a> 
                     </p>
                 </div>
             </div>  
@@ -193,7 +206,7 @@
                             <p id="description">
                                 My undergraduate thesis. I generalize a result of <a href="https://arxiv.org/pdf/1407.6838.pdf">
                                 Alper and Isaev</a> on the semistability of the gradient morphism from the case of binary forms 
-                                to cubics forms of degree $d$, $3 \leq d \leq 9$.
+                                to cubics forms of degree $d$, for $3 \leq d \leq 9$.
                             </p>
                             <p>A year or so after I graduated, Fedorchuk generalized my result to arbitrary forms of any 
                                 degree. See Theorem 1.4.1 <a href="https://arxiv.org/pdf/1508.06991.pdf">here</a> and 
