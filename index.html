@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
     <div class="site">
     <nav class="navbar">
         <div class="name-container">
@@ -50,8 +51,9 @@
     <div class="site">
         <div class="top_content">
             <div class="top_text">   
-                <p> I am a mathematician working on implied volatility dynamics in quantitative finance.
-                    I received my Ph.D. in math from <a href="https://mathematics.stanford.edu/">Stanford</a> in August 2020, advised by 
+                <p> I am a mathematician working on implied volatility dynamics in quantitative finance. 
+                    I received my Ph.D. in math    
+                    from <a href="https://mathematics.stanford.edu/">Stanford</a> in August 2020, advised by 
                 <a href="http://math.stanford.edu/~vakil/"> Ravi Vakil</a> and 
                 <a href="https://sites.math.washington.edu/~jarod/"> Jarod Alper</a>. </p>
                 <br>
@@ -68,7 +70,6 @@
                     <a href="http://math.tufts.edu/people/faculty/david-ishii-smyth"> David Ishii Smyth</a>.
                 </p>
                 
-                <br>           
 
             </div>
 
@@ -83,37 +84,73 @@
             <h1>Projects</h1>
 
             <div class="tab_block_pre">
+            <p>
+                <h2>COVID-19 </h2>
+                <p> 
+                Since the start of the <a href="https://en.wikipedia.org/wiki/Malaysian_movement_control_order#Total_lockdown">total lockdown</a> 
+                in Malaysia on 1/6/2021, I have become increasingly interested in trying to understand the spread of COVID-19 in Malaysia.
+                </p>
+            </p>
+            <div class="tab_block">
                 <p>
-                    <h2>COVID-19 </h2>
-                    <p> 
-                    Since the start of the <a href="https://en.wikipedia.org/wiki/Malaysian_movement_control_order#Total_lockdown">total lockdown</a> 
-                    in Malaysia on 1/6/2021, I have become increasingly interested in trying to understand the spread of COVID-19 in Malaysia.
+                    <h2 id="covid-suggestions">The failure of the 2021 FMCO</h2>
+                    <p>
+                        I argue that the failure to stop workplace clusters from happening was why the 2021 FMCO failed in 
+                        the Klang Valley, Johor, Pulau Pinang and Negeri Sembilan. Please see this pdf 
+                        <a href="files/modeling_covid19_malaysia.pdf">here</a>. In addition, please see this <a href="https://www.ideas.org.my/think-tanks-urgently-address-workplace-clusters-to-avoid-klang-valley-catastrophe-in-other-states/">press statement</a>
+                        (with <a href="https://www.ideas.org.my">IDEAS</a> and <a href="https://baitalamanah.com">Bait Al-Amanah</a>), urging the federal government to address this issue ASAP.
                     </p>
                 </p>
-                    <div class="tab_block">
+
+                <p>
+                    <h2 id="description-penang">A reopening criterion for Penang  </h2>
                         <p>
-                            <h2 id="covid-suggestions">The failure of the 2021 FMCO</h2>
-                            <p>
-                                I argue that the failure to stop workplace clusters from happening was why the 2021 FMCO failed in 
-                                the Klang Valley, Johor, Pulau Pinang and Negeri Sembilan. Please see this pdf 
-                                <a href="files/modeling_covid19_malaysia.pdf">here</a>. In addition, please see this <a href="https://www.ideas.org.my/think-tanks-urgently-address-workplace-clusters-to-avoid-klang-valley-catastrophe-in-other-states/">press statement</a>
-                                (with <a href="https://www.ideas.org.my">IDEAS</a> and <a href="https://baitalamanah.com">Bait Al-Amanah</a>), urging the federal government to address this issue ASAP.
-                            </p>
+                            A reopening criterion for Penang (as well as other states in Malaysia)
+                            at the <em>district level</em>, based on the basic reproduction number and daily new cases per 100,000 
+                            population. 
                         </p>
 
-                        
-                        <p>
-                            <h2>2021 Bayan Baru Donation Drive </h2> 
-                                <p id="description">
-                                    The goal is to raise       
-                                    RM 50,000 (approx. USD 12,000) to be distributed as cash to
-                                    B40 families around the area of Bayan Baru, Penang, Malaysia during the 2021 FMCO (Full Movement Control Order). The GIVE.asia
-                                    page to donate is  <a href="https://give.asia/campaign/2021-bayan-baru-food-drive#/">here</a>. This project is joint with the member of parliament
-                                    for Bayan Baru, <a href="https://www.facebook.com/SimTzeTzin.MP/">YB Sim Tze Tzin</a>. 
-                                </p>
+                        <div class="penang-gif">
+                            <img src="files/penang.gif">
+                        </div>
+
+                        <p id="description">The gif above shows the evolution over time of ($R_0$, daily new cases/100k) for 
+                            each of the 5 districts in Penang, i.e. Timur Laut, Barat Daya, Seberang Perai Utara,
+                            Seberang Perai Tengah and Seberang Perai Selatan. These have been abbreviated respectively 
+                            as TL, BD, SPU, SPT, SPS. 
                         </p>
-                    </div> 
-            </div>
+                        <br>
+
+                            The criterion for reopening that we suggest depends on determining thresholds
+                            shaded green, yellow and red in the figure above. In theory, these thresholds are a 
+                            function of the state of the healthcare system, e.g. ICU occupancy and vaccination rates.
+                            However, since I do not have access to the data of ICU occupancy rates in Penang,
+                            I shaded in thresholds determined empirically from past data: Go back in time and record the date that is two weeks or so  <em>prior</em> to
+                            the healthcare system being overwhelmed. Record ($R_0$, daily new cases/100k) around then, and set
+                            that to be your threshold.
+                        </p>
+
+                        <p>
+                            The code to calculate $R_0$ for each district of (of any state!) in Malaysia
+                            is available on my GitHub <a href="https://github.com/dblim/penang-covid19-r0">here</a>.
+                            The basic reproduction number was calculated using the method of ordinary least squares
+                            applied to daily new case numbers over a short time frame.
+                        </p>
+                </p>
+                
+                <p>
+                    <h2>2021 Bayan Baru Donation Drive </h2> 
+                        <p id="description">
+                            The goal is to raise       
+                            RM 50,000 (approx. USD 12,000) to be distributed as cash to
+                            B40 families around the area of Bayan Baru, Penang, Malaysia during the 2021 FMCO (Full Movement Control Order). The GIVE.asia
+                            page to donate is  <a href="https://give.asia/campaign/2021-bayan-baru-food-drive#/">here</a>. This project is joint with the member of parliament
+                            for Bayan Baru, <a href="https://www.facebook.com/SimTzeTzin.MP/">YB Sim Tze Tzin</a>. 
+                        </p>
+                </p>
+
+            </div> 
+        </div>
         </div>
 
         <div class="work" id="papers">
@@ -186,8 +223,7 @@
                 <div class="tab_block">     
                     <p>
                         <h2>The rank of $y^2 = x^3 - 2$ via Mazur-Tate methods </h2>
-                        <p id="description">Inspired by the paper <a href="https://eudml.org/doc/142238"><em>Points of order $13$ on elliptic curves</em></a>, I show using the 
-                            method of $2$-descent that the elliptic curve $y^2 = x^3 - 2$ has rank $1$.</p>
+                        <p id="description">Inspired by the paper <a href="https://eudml.org/doc/142238"><em>Points of order $13$ on elliptic curves</em></a>, I show that the rank of the elliptic curve $y^2 = x^3 - 2$ is $1$ using the method of $2$-descent.</p>
                         <a href="files/2_descent.pdf">PDF</a>
                     </p>
 
@@ -268,17 +304,6 @@
         </div>
 
     <div class="work">
-        <h1>Math Friends</h1>
-        <a href="https://sites.google.com/view/zevrosengarten">Zev Rosengarten</a>,
-        <a href="https://www.math.ucla.edu/~brianrl/">Brian Lawrence</a>,
-        <a href="https://arxiv.org/search/math?searchtype=author&query=Zavyalov%2C+B">Bogdan Zavyalov</a>,
-        <a href="https://people.math.harvard.edu/~landesman/">Aaron Landesman</a>,
-        <a href="https://arxiv.org/search/math?query=Kuhn%2C+Nikolas&searchtype=author&abstracts=show&order=-announced_date_first&size=50">Nikolas Kuhn</a>,
-        <a href="http://web.stanford.edu/~msellke/main">Mark Sellke</a>,
-        <a href="https://yangpliu.github.io/">Yang Liu</a>.
-    </div>
-
-    <div class="work">
         <h1>Education</h1>
             <p><b>Ph.D. in Mathematics</b>, Stanford University, 2015-2020.</p>
 
@@ -290,8 +315,6 @@
         <h1>Honors</h1>
             <p>University Medal, Australian National University, 2014.</p>
     </div>
-
-    
 
     <br>
     </div>
@@ -320,11 +343,12 @@
         </div>
 
         <div class="footer-bottom" style="color:gray;">
-            &copy; 2022 David Benjamin Lim
+            &copy; 2021 David Benjamin Lim
         </div>
 
     </div>
-</div>
+
+    </div>
 
 </body>
 </html>
