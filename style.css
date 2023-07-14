@@ -20,6 +20,27 @@
     font-size:17px;
 }
 
+/* English - Hebrew title */
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.name-en {
+    font-size: 2em;
+    font-weight: bold;
+    align-self: flex-end; 
+}
+
+.name-he {
+    font-size: 1.5em;
+    font-weight: normal;
+    align-self: flex-end; /* This aligns the Hebrew name to the right side of its container */
+    padding-top: 10px; /* This adds some space above the Hebrew name */
+}
+
 /* Side wide wrapper */
 
 .site {
@@ -28,7 +49,7 @@
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-top: 1.12rem;
+    margin-top: 2rem;
     margin-bottom: 1.12rem;
 }
 
